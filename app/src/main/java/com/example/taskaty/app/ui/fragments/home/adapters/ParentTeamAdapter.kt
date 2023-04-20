@@ -153,7 +153,7 @@ class ParentTeamAdapter(
                 dateTextFirst.text = DateTimeUtils.toDateFormat(firstItem.creationTime)
                 timeTextFirst.text = DateTimeUtils.toTimeFormat(firstItem.creationTime)
                 topAssigneeCountCircle.text =
-                    firstItem.assignee.split(",").filter { it != "" }.size.toString()
+                    firstItem.assignee.split(",").size.toString()
                 upcomingFirstCard.setOnClickListener { onTaskClickListener.onTaskClick(firstItem) }
                 disappearCards(upcomingFirstCard, upcomingSecondCard, true)
             } else {
@@ -164,12 +164,12 @@ class ParentTeamAdapter(
                 dateTextFirst.text = DateTimeUtils.toDateFormat(firstItem.creationTime)
                 timeTextFirst.text = DateTimeUtils.toTimeFormat(firstItem.creationTime)
                 topAssigneeCountCircle.text =
-                    firstItem.assignee.split(",").filter { it != "" }.size.toString()
+                    firstItem.assignee.split(",").size.toString()
                 taskHeaderSecond.text = secondItem.title
                 dateTextSecond.text = DateTimeUtils.toDateFormat(secondItem.creationTime)
                 timeTextSecond.text = DateTimeUtils.toTimeFormat(secondItem.creationTime)
                 bottomAssigneeCountCircle.text =
-                    secondItem.assignee.split(",").filter { it != "" }.size.toString()
+                    secondItem.assignee.split(",").size.toString()
                 upcomingFirstCard.setOnClickListener { onTaskClickListener.onTaskClick(firstItem) }
                 upcomingSecondCard.setOnClickListener { onTaskClickListener.onTaskClick(secondItem) }
             }
@@ -188,7 +188,7 @@ class ParentTeamAdapter(
                 dateTextFirst.text = DateTimeUtils.toDateFormat(firstItem.creationTime)
                 timeTextFirst.text = DateTimeUtils.toTimeFormat(firstItem.creationTime)
                 topAssigneeCountCircle.text =
-                    firstItem.assignee.split(",").filter { it != "" }.size.toString()
+                    firstItem.assignee.split(",").size.toString()
                 firstCard.setOnClickListener { onTaskClickListener.onTaskClick(firstItem) }
                 disappearCards(firstCard, secondCard, true)
             } else {
@@ -199,12 +199,12 @@ class ParentTeamAdapter(
                 dateTextFirst.text = DateTimeUtils.toDateFormat(firstItem.creationTime)
                 timeTextFirst.text = DateTimeUtils.toTimeFormat(firstItem.creationTime)
                 topAssigneeCountCircle.text =
-                    firstItem.assignee.split(",").filter { it != "" }.size.toString()
+                    firstItem.assignee.split(",").size.toString()
                 taskHeaderSecond.text = secondItem.title
                 dateTextSecond.text = DateTimeUtils.toDateFormat(secondItem.creationTime)
                 timeTextSecond.text = DateTimeUtils.toTimeFormat(secondItem.creationTime)
                 bottomAssigneeCountCircle.text =
-                    secondItem.assignee.split(",").filter { it != "" }.size.toString()
+                    secondItem.assignee.split(",").size.toString()
                 firstCard.setOnClickListener { onTaskClickListener.onTaskClick(firstItem) }
                 secondCard.setOnClickListener { onTaskClickListener.onTaskClick(secondItem) }
             }

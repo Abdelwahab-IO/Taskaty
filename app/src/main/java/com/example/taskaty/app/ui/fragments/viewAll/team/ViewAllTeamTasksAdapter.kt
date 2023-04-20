@@ -50,7 +50,7 @@ class ViewAllTeamTasksAdapter(private val onTaskClickListener: OnTaskClickListen
             textState.backgroundTintList = ContextCompat.getColorStateList(
                 holder.itemView.context, getStatusColors(item.status)
             )
-            textAssignee.text = item.assignee.split(",").filter { it != "" }.size.toString()
+            textAssignee.text = item.assignee.split(",").size.toString()
 
             textAssignee.backgroundTintList = ContextCompat.getColorStateList(
                 holder.itemView.context, getStatusColors(item.status)

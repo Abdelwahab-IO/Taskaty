@@ -1,6 +1,5 @@
 package com.example.taskaty.data.repositories
 
-import android.util.Log
 import com.example.taskaty.data.api.TasksApiClient
 import com.example.taskaty.data.api.interceptors.AuthInterceptor
 import com.example.taskaty.data.mappers.TaskMappers
@@ -62,7 +61,6 @@ class AllTasksRepositoryImpl private constructor() : AllTasksRepository {
 
             override fun onResponse(call: Call, response: Response) {
                 val responseBody = response.body.string()
-                Log.d("xxx", responseBody)
                 val createdTask = jsonToPersonalTask(responseBody)
                 cachedPersonalTasks = cachedPersonalTasks + createdTask
                 callback.onSuccess(RepoResponse.Success(Unit))
