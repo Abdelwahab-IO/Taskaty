@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="primary_color">#01704F</color>
+    <color name="primary_variant">#FAFAFA</color>
+    <color name="text_color_87">#DE000000</color>
+    <color name="text_color_60">#99000000</color>
+    <color name="text_color_50">#80000000</color>
+    <color name="task_card_text_color">#80000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="in_progress_color">#418E77</color>
+    <color name="background_color">#F1F1F1</color>
+    <color name="todo_color">#7FBAA9</color>
+    <color name="done_color">#93CB80</color>
+    <color name="text_field_stroke_color">#EBEBEB</color>
+    <color name="task_card_stroke_color">#F0F0F0</color>
+    <color name="task_card_color">#FAFAFA</color>
+    <color name="loading_card_background_color">#E7E6E6</color>
+    <color name="loading_card_content_color">#DDDDDD</color>
+    <color name="search_hint_text_color">#4D49454F</color>
+    <color name="search_bar_stroke_color">#F5F5F5</color>
+    <color name="submit_text_color">#01704F</color>
+    <color name="back_icon">#000000</color>
+    <color name="search_background_color">#FFFFFF</color>
+
 </resources>
